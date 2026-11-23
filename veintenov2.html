@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revolución Mexicana</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4eee3;
+            color: #333;
+        }
+
+        header {
+            background: #174d35;
+            color: white;
+            text-align: center;
+            padding: 35px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background: #292929;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #e6b85c;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 25px;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #0002;
+        }
+
+        h2 {
+            color: #174d35;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+        .portada img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .personajes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .personaje {
+            flex: 1 1 250px;
+            background: #f4eee3;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .personaje img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        button {
+            background: #174d35;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #267a50;
+        }
+
+        #dato {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #174d35;
+        }
+
+        footer {
+            background: #292929;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>La Revolución Mexicana</h1>
+        <p>Una lucha por la justicia, la libertad y la igualdad</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#historia">Historia</a>
+        <a href="#personajes">Personajes</a>
+        <a href="#consecuencias">Consecuencias</a>
+    </nav>
+
+    <main>
+
+        <section class="portada" id="inicio">
+            <h2>20 de noviembre de 1910</h2>
+
+            <p>
+                La Revolución Mexicana fue un movimiento armado que comenzó
+                el 20 de noviembre de 1910. Su objetivo principal era terminar
+                con el gobierno de Porfirio Díaz y buscar mejores condiciones
+                de vida para los mexicanos.
+            </p>
+
+            <img src="imagen\revo.jpg"
+                 alt="Soldados durante la Revolución Mexicana">
+        </section>
+
+        <section id="historia">
+            <h2>¿Cómo comenzó la Revolución?</h2>
+
+            <p>
+                Durante el gobierno de Porfirio Díaz existían muchas
+                desigualdades sociales. Los campesinos tenían pocas tierras
+                y los trabajadores recibían bajos salarios.
+            </p>
+
+            <p>
+                Francisco I. Madero se opuso a la reelección de Porfirio Díaz
+                y llamó al pueblo a levantarse en armas mediante el Plan de
+                San Luis.
+            </p>
+        </section>
+
+        <section id="personajes">
+            <h2>Personajes importantes</h2>
+
+            <div class="personajes">
+
+                <div class="personaje">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Francisco%20I.%20Madero.jpg"
+                         alt="Francisco I. Madero">
+                    <h3>Francisco I. Madero</h3>
+                    <p>Fue uno de los principales iniciadores de la Revolución Mexicana.</p>
+                </div>
+
+                <div class="personaje">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Emiliano%20Zapata.jpg"
+                         alt="Emiliano Zapata">
+                    <h3>Emiliano Zapata</h3>
+                    <p>Defendió los derechos de los campesinos y la devolución de sus tierras.</p>
+                </div>
+
+                <div class="personaje">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pancho%20Villa.jpg"
+                         alt="Pancho Villa">
+                    <h3>Francisco Villa</h3>
+                    <p>Fue uno de los líderes revolucionarios más conocidos del norte de México.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="consecuencias">
+            <h2>Consecuencias de la Revolución</h2>
+
+            <p>
+                La Revolución Mexicana provocó grandes cambios políticos y
+                sociales. Uno de sus resultados más importantes fue la
+                Constitución de 1917, que estableció derechos laborales,
+                educativos y sobre la propiedad de la tierra.
+            </p>
+
+            <h2>Dato histórico</h2>
+
+            <button onclick="mostrarDato()">Mostrar dato curioso</button>
+
+            <p id="dato"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto escolar - Historia de México</p>
+        <p>20 de noviembre - Revolución Mexicana</p>
+    </footer>
+
+    <script>
+        function mostrarDato() {
+            document.getElementById("dato").innerHTML =
+            "La Constitución de 1917 fue una de las primeras en el mundo en incluir derechos sociales y laborales.";
+        }
+    </script>
+
+</body>
+</html>
